@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="{{url_for('static',filename='/css/cabecera-styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/pie-pagina-styles.css')}}">
+    <title>{% block title %} template {% endblock %} </title>
+    <title>templatet</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-menu">
+            <h1>first flask frontend</h1>
+            <ul>
+                <li>
+                <a href="{{url_for('home')}}">inicio</a>
+                </li>
+                <li>
+                    <a href="{{url_for('home')}}">productos</a>
+                </li>
+                <li>
+                    <a href="{{url_for('home')}}">servicios</a>
+                </li>
+                <li>
+                    <a href="{{url_for('home')}}">contactanos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main> 
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        <h1>&copy;dayanacastro16</h1>
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

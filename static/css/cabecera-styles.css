@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    background-color: blueviolet;
+}
+.contenedor-menu{
+    height: 150px;
+    width: 80%;
+    background-color: beige;
+    margin: 0 auto;
+}
+.contenedor-menu h1{
+    color: blueviolet;
+    text-align:center;
+    text-shadow: 6px 6px 6px blue;
+    line-height: 60px;
+}
+
+.contenedor-menu ul{
+    display: flex;
+}
+
+.contenedor-menu ul li{
+    list-style-type:none;
+    margin-left: 50px;
+    padding-left: 10px;
+
+}
+.contenedor-menu ul li a{
+    text-decoration: none;
+
+}
+.contenedor-menu ul li a:hover{
+    font-size: 28px;
+    color:blue;
+    background-color: azure;
+}
